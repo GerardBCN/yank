@@ -1467,6 +1467,8 @@ class TLeap:
                 self.add_commands('loadAmberParams ' + local_name)
             elif extension == '.off' or extension == '.lib':
                 self.add_commands('loadOff ' + local_name)
+            elif extension == '.prepi':
+                self.add_commands('loadamberprep ' + local_name)
             else:
                 self.add_commands('source ' + par_file)
 
